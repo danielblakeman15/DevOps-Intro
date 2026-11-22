@@ -154,3 +154,602 @@ danielblakeman@Daniels-MacBook-Pro DevOps-Intro % find .git/objects -type f | wc
 '      63
 
 more important work
+
+danielblakeman@Daniels-MacBook-Pro DevOps-Intro % git reflog       
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{0}: reset: moving to HEAD~2
+e6ab3ea HEAD@{1}: commit: wip(lab2): more progress
+81bdff0 HEAD@{2}: commit: wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{34}: checkout: moving from feature/lab1 to main
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+ (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{34}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{35}: commit: docs(lab1): finish submission
+55fbab9 HEAD@{36}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{37}: checkout: moving from feature/lab1 to feature/lab1
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{34}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{35}: commit: docs(lab1): finish submission
+55fbab9 HEAD@{36}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{37}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{38}: checkout: moving from main to feature/lab1
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{34}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{35}: commit: docs(lab1): finish submission
+55fbab9 HEAD@{36}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{37}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{38}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{39}: checkout: moving from feature/lab1 to main
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, oed commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{34}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{35}: commit: docs(lab1): finish submission
+55fbab9 HEAD@{36}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{37}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{38}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{39}: checkout: moving from feature/lab1 to main
+55fbab9 HEAD@{40}: commit (amend): docs(lab1): start submission
+:
+
+
+
+
+
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{34}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{35}: commit: docs(lab1): finish submission
+55fbab9 HEAD@{36}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{37}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{38}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{39}: checkout: moving from feature/lab1 to main
+55fbab9 HEAD@{40}: commit (amend): docs(lab1): start submission
+fcda8a3 HEAD@{41}: checkout: moving from main to feature/lab1
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{34}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{35}: commit: docs(lab1): finish submission
+55fbab9 HEAD@{36}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{37}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{38}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{39}: checkout: moving from feature/lab1 to main
+55fbab9 HEAD@{40}: commit (amend): docs(lab1): start submission
+fcda8a3 HEAD@{41}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{42}: commit: docs: add PR template
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{34}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{35}: commit: docs(lab1): finish submission
+55fbab9 HEAD@{36}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{37}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{38}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{39}: checkout: moving from feature/lab1 to main
+55fbab9 HEAD@{40}: commit (amend): docs(lab1): start submission
+fcda8a3 HEAD@{41}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{42}: commit: docs: add PR template
+bad2887 (upstream/main, upstream/HEAD) HEAD@{43}: checkout: moving from feature/lab1 to main
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{34}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{35}: commit: docs(lab1): finish submission
+55fbab9 HEAD@{36}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{37}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{38}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{39}: checkout: moving from feature/lab1 to main
+55fbab9 HEAD@{40}: commit (amend): docs(lab1): start submission
+fcda8a3 HEAD@{41}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{42}: commit: docs: add PR template
+bad2887 (upstream/main, upstream/HEAD) HEAD@{43}: checkout: moving from feature/lab1 to main
+fcda8a3 HEAD@{44}: commit: docs(lab1): start submission
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{34}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{35}: commit: docs(lab1): finish submission
+55fbab9 HEAD@{36}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{37}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{38}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{39}: checkout: moving from feature/lab1 to main
+55fbab9 HEAD@{40}: commit (amend): docs(lab1): start submission
+fcda8a3 HEAD@{41}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{42}: commit: docs: add PR template
+bad2887 (upstream/main, upstream/HEAD) HEAD@{43}: checkout: moving from feature/lab1 to main
+fcda8a3 HEAD@{44}: commit: docs(lab1): start submission
+bad2887 (upstream/main, upstream/HEAD) HEAD@{45}: checkout: moving from main to feature/lab1
+:
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from main to feature/lab2
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{4}: checkout: moving from feature/lab2 to main
+4c16020 HEAD@{5}: reset: moving to 4c16020
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{6}: reset: moving to db27111
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{7}: reset: moving to HEAD~2
+4c16020 HEAD@{8}: rebase (finish): returning to refs/heads/feature/lab2
+4c16020 HEAD@{9}: rebase (pick): wip(lab2): more progress
+fa636e5 HEAD@{10}: rebase (pick): wip(lab2): start
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{11}: rebase (start): checkout main
+227ef5a HEAD@{12}: reset: moving to 227ef5a
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{13}: reset: moving to db27111
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{14}: reset: moving to HEAD~2
+227ef5a HEAD@{15}: commit: wip(lab2): more progress
+e81f855 HEAD@{16}: commit: wip(lab2): start
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{17}: checkout: moving from feature/lab1 to feature/lab2
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{18}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{19}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{20}: checkout: moving from main to main
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{21}: checkout: moving from fix/signed-commit to main
+cc120c9 (origin/fix/signed-commit) HEAD@{22}: commit (amend): test: unsigned commit (should fail)
+5308dc0 HEAD@{23}: checkout: moving from main to fix/signed-commit
+5308dc0 HEAD@{24}: checkout: moving from feature/lab1 to main
+9468776 (origin/feature/lab1, feature/lab1) HEAD@{25}: commit: adding B.3
+4578615 HEAD@{26}: reset: moving to HEAD~1
+f07ff82 HEAD@{27}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{28}: reset: moving to HEAD~1
+4af02a4 HEAD@{29}: commit: test: unsigned commit (should fail)
+4578615 HEAD@{30}: checkout: moving from main to feature/lab1
+5308dc0 HEAD@{31}: commit: test: unsigned commit (should fail)
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{32}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{33}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{34}: checkout: moving from feature/lab1 to main
+4578615 HEAD@{35}: commit: docs(lab1): finish submission
+55fbab9 HEAD@{36}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{37}: checkout: moving from feature/lab1 to feature/lab1
+55fbab9 HEAD@{38}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{39}: checkout: moving from feature/lab1 to main
+55fbab9 HEAD@{40}: commit (amend): docs(lab1): start submission
+fcda8a3 HEAD@{41}: checkout: moving from main to feature/lab1
+db27111 (HEAD -> feature/lab2, origin/main, origin/HEAD, main) HEAD@{42}: commit: docs: add PR template
+bad2887 (upstream/main, upstream/HEAD) HEAD@{43}: checkout: moving from feature/lab1 to main
+fcda8a3 HEAD@{44}: commit: docs(lab1): start submission
+bad2887 (upstream/main, upstream/HEAD) HEAD@{45}: checkout: moving from main to feature/lab1
+bad2887 (upstream/main, upstream/HEAD) HEAD@{46}: clone: from https://github.com/danielblakeman15/DevOps-Intro.git
+danielblakeman@Daniels-MacBook-Pro DevOps-Intro % git reset --hard e6ab3ea
+HEAD is now at e6ab3ea wip(lab2): more progress
+
+
+Nothing would happen if i ran git gc unless i ran git reflog expire --expire-unreachable=now --al before i ran git gc --prune= now
