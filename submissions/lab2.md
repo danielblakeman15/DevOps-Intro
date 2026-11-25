@@ -753,3 +753,15 @@ HEAD is now at e6ab3ea wip(lab2): more progress
 
 
 Nothing would happen if i ran git gc unless i ran git reflog expire --expire-unreachable=now --al before i ran git gc --prune= now
+
+danielblakeman@Daniels-MacBook-Pro submissions % git tag -l --format='%(refname:short) %(objecttype) %(*objecttype)'
+v0.0.1 tag commit
+v0.1.0-lab2-danielblakeman tag commit
+danielblakeman@Daniels-MacBook-Pro submissions % git tag -v "v0.1.0-lab2-${USER}"
+object db271116511e9af65cf83a68ff818b3ce29b5e82
+type commit
+tag v0.1.0-lab2-danielblakeman
+tagger Daniel Blakeman <danielblakeman15@gmail.com> 1795371574 -0500
+
+Lab2 milestone - version control deep dive
+Good "git" signature for danielblakeman15@gmail.com with ED25519 key SHA256:cW9yQ85NZVpgKIVumY9t29j+HgXyEYncdcHEVmj+V4Q
